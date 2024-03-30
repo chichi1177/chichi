@@ -10,4 +10,6 @@
 
 ------------------------------------------------
 
-YOLO
+YOLO  
+try to edit the commit comment with issue info  
+Just now,i create an issue in the original repo.So i want to commit againto check if i can associated whit the issue.  
