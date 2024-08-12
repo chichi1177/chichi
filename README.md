@@ -17,5 +17,7 @@ i should add a brackets in commit comment
 i want to ignore the repo name</br>
 -------------------------------------------</br>
 a new commit 
+-------------------------------------------</br>
+some new change
 --------------------------------</br>
 the original branch has new change
