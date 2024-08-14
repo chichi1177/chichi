@@ -19,5 +19,8 @@ i want to ignore the repo name</br>
 a new commit 
 -------------------------------------------</br>
 some new change
+
+--------------------------------------------</br>
+trigger
 --------------------------------</br>
 the original branch has new change
