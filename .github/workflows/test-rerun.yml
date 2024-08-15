@@ -10,6 +10,12 @@ permissions:
   contents: write
 
 jobs:
+    a-passed-job: 
+        runs-on: ubuntu-latest
+        steps:
+          - name: This job always passes
+            run: echo "This step always passes..." && sleep 10
+
     some-other-step:
         runs-on: ubuntu-latest
         steps:
