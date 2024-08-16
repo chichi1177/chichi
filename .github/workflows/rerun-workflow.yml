@@ -4,6 +4,8 @@ on:
         inputs:
             run_id:
                 required: true
+    pull_request:
+        types: [opened, reopened, synchronize]
                 
 jobs:
     rerun:
