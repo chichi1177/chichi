@@ -26,3 +26,4 @@ some new change
 trigger
 --------------------------------</br>
 the original branch has new change
+----------------------------------
