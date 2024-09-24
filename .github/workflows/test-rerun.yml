@@ -5,10 +5,10 @@ on:
       types: [opened, reopened, synchronize]
     push:
         branches:
-            - your-branch
-            
+            - "main"
 permissions:
     actions: write
+          
   
 jobs:
     a-passed-job: 
