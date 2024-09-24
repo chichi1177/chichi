@@ -10,7 +10,7 @@ permissions:
             
 jobs:
     rerun:
-        if: github.event.workflow_run.conclusion == 'failure'
+        if: github.event.workflow_run.conclusion == 'failure' && fromJSON(github.event.workflow_run.run_attempt) < 3
         runs-on: ubuntu-latest
         steps:
             - name: rerun ${{ github.event.workflow_run.id }}
