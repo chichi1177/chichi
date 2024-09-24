@@ -11,14 +11,18 @@ permissions:
           
   
 jobs:
-    a-passed-job: 
-        runs-on: ubuntu-latest
-        steps:
-          - name: This job always passes
-            run: echo "This step always passes..." && sleep 10
+  a-passed-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: This job always passes
+        run: echo "This step always passes..." && sleep 10
 
-    some-other-step:
-        runs-on: ubuntu-latest
-        steps:
-            - name: This step always fails
-              run: sleep 10 && exit 1
+  some-other-step:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This step conditionally fails
+        run: |
+          sleep 10
+          exit 1
+        if: fromJson(github.run_attempt) < 2
+
